@@ -3,19 +3,154 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --dark_rod: #080808;
+  --light_rod: #f7f7f7;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--light_rod);
+  background: var(--dark_rod);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+/* Header */
+
+.logo {
+  color: var(--light_rod, #f7f7f7);
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  letter-spacing: 0.525rem;
+}
+
+li {
+  color: var(--light_rod);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 171.429% */
+}
+
+.btn {
+  border-radius: 1.75rem;
+  background: var(--light_rod, #f7f7f7);
+  color: var(--dark_rod, #080808);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: 0.44rem 1.25rem;
+  cursor: pointer;
+  outline: 1px solid var(--dark_rod);
+  /* Especifica transiciones separadas para cada propiedad */
+  transition: background-color 0.3s ease, color 0.3s ease,
+    outline-width 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  outline: 3px solid var(--dark_rod);
+  background-color: #080808;
+  color: #f7f7f7;
+  box-shadow: 0px 0px 5px 5px #f7f7f71a;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 0.34rem 1rem;
+  }
+}
+
+.navbar-lg,
+.contact-lg {
+  display: block;
+}
+
+.navbar-sm {
+  display: none;
+}
+
+.ham {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+
+  .ham {
+    display: block;
+  }
+
+  .navbar-sm {
+    display: block;
+  }
+
+  .navbar-lg,
+  .contact-lg {
+    display: none;
+  }
+}
+
+/* Ham menu */
+.burger-wrapper {
+  cursor: pointer;
+  margin: auto;
+  width: 2rem;
+  height: 2.6rem;
+}
+
+.burger-wrapper .hamburger {
+  background: var(--light_rod);
+  width: 2rem; /* $s*10 */
+  height: 1px; /* $s */
+  position: relative;
+  transition: background 10ms 300ms ease;
+  z-index: 10;
+  transform: translateY(20px); /* $s*4 */
+}
+
+.burger-wrapper .hamburger:before,
+.burger-wrapper .hamburger:after {
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  position: absolute;
+  background: var(--light_rod);
+  width: 2rem; /* $s*10 */
+  height: 1px; /* $s */
+  content: "";
+}
+
+.burger-wrapper .hamburger:before {
+  top: -10px; /* $s*-3 */
+}
+
+.burger-wrapper .hamburger:after {
+  top: 10px; /* $s*3 */
+}
+
+.menu-trigger:checked ~ .burger-wrapper .hamburger:before,
+.menu-trigger:checked ~ .burger-wrapper .hamburger:after {
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+  top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-hidden {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  transition: right 0.4s ease-in-out;
+}
+
+.menu-trigger:checked ~ .nav-hidden {
+  right: 0;
 }
