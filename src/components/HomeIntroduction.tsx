@@ -1,6 +1,6 @@
 export const HomeIntroduction = () => {
   return (
-    <div className="container mx-auto md-my-36 my-10 px-6 ">
+    <section className="container mx-auto md-my-36 my-10 px-6 ">
       <h1>
         Hi! I'm Rodrigo Pérez
         <br /> <b>front-end developer</b>
@@ -37,6 +37,6 @@ export const HomeIntroduction = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

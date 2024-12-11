@@ -3,13 +3,17 @@ import { HomeIntroduction } from "@/components/HomeIntroduction";
 import { Technologies } from "@/components/Technologies";
 
 export default function Home() {
+  /**
+ Home page layout.
+ Displays the header, sections and contact
+ */
   return (
     <>
       <Header />
-      <div className="section-1 pt-48">
+      <main className="home-section pt-48">
         <HomeIntroduction />
         <Technologies />
-      </div>
+      </main>
     </>
   );
 }

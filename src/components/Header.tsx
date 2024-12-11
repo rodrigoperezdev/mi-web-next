@@ -1,96 +1,76 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
+const navLinks = [
+  { href: "#about", label: "About Me" },
+  { href: "#technologies", label: "Technologies" },
+  { href: "#experience", label: "Experience" },
+  { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
+];
+/**
+ * Header component for the website.
+ * Includes a responsive navbar with links to different sections.
+ */
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="w-full fixed">
       <div className="container mx-auto flex items-center justify-between py-6 px-6">
+        {/* Logo */}
         <div>
           <a href="#about" className="transition-colors logo">
             LRPH
           </a>
         </div>
 
-        <nav className="rounded-3xl border border-white px-9 py-3 navbar-lg">
+        {/* Desktop Navigation */}
+        <nav className="hidden lg:flex rounded-3xl border border-white px-9 py-3 navbar-lg">
           <ul className="flex items-center space-x-8">
-            <li>
-              <a href="#technologies" className=" transition-colors">
-                About Me
-              </a>
-            </li>
-            <li>
-              <a href="#technologies" className=" transition-colors">
-                Technologies
-              </a>
-            </li>
-            <li>
-              <a href="#experience" className=" transition-colors">
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#skills" className=" transition-colors">
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className=" transition-colors">
-                Projects
-              </a>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} className="transition-colors">
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 
-        <div>
+        {/* Contact Button */}
+        <div className="hidden lg:block">
           <a href="#contact" className="btn contact-lg">
             Contact Me
           </a>
         </div>
 
-        <div className="navbar-sm">
-          <div className="ham">
-            <input
-              id="togglenav"
-              className="menu-trigger hidden"
-              type="checkbox"
-            />
-            <label className="burger-wrapper block" htmlFor="togglenav">
-              <div className="hamburger"></div>
-            </label>
-            <nav className="absolute w-screen h-screen top-0 pr-5 sm:pr-11 pt-20 container nav-hidden">
-              <ul className="flex flex-col text-right space-x-8 items-end">
-                <li className="mb-3">
-                  <a href="#about" className=" transition-colors">
-                    About Me
-                  </a>
-                </li>
-                <li className="mb-3">
-                  <a href="#technologies" className=" transition-colors">
-                    Technologies
-                  </a>
-                </li>
-                <li className="mb-3">
-                  <a href="#experience" className=" transition-colors">
-                    Experience
-                  </a>
-                </li>
-                <li className="mb-3">
-                  <a href="#skills" className=" transition-colors">
-                    Skills
-                  </a>
-                </li>
-                <li className="mb-6">
-                  <a href="#projects" className=" transition-colors">
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" className="btn">
-                    Contact Me
-                  </a>
-                </li>
+        {/* Mobile Navigation */}
+        <div className="lg:hidden">
+          <button
+            aria-label="Toggle navigation menu"
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+            className="burger-wrapper block"
+          >
+            <div className="hamburger"></div>
+          </button>
+          {isMenuOpen && (
+            <nav className="absolute w-screen h-screen top-0 right-0 bg-black text-white pt-20 pr-5">
+              <ul className="flex flex-col text-right space-y-3 items-end">
+                {navLinks.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      className="transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </nav>
-          </div>
+          )}
         </div>
       </div>
     </header>

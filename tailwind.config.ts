@@ -12,6 +12,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         white: "#F7F7F7",
+        "gray-50": "#525252",
+        "gray-700": "#141414",
       },
     },
   },

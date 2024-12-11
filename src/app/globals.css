@@ -41,7 +41,16 @@ h2 {
   line-height: 100%; /* 2.5rem */
 }
 
-p {
+.title-background {
+  position: absolute;
+  top: -10px;
+  left: -12rem;
+  z-index: -1;
+  max-width: 90%;
+}
+
+p,
+figcaption {
   font-weight: 200;
 }
 
@@ -201,7 +210,7 @@ a:hover {
 }
 
 /* Home introduction */
-.section-1 {
+.home-section {
   background-image: url("/fondo-home.png");
   background-repeat: no-repeat;
   background-position: right;
