@@ -41,6 +41,15 @@ h2 {
   line-height: 100%; /* 2.5rem */
 }
 
+h3 {
+  font-size: 2.25rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
 .title-background {
   position: absolute;
   top: -10px;
@@ -101,8 +110,6 @@ a:hover {
   line-height: 1.5rem;
   padding: 0.44rem 1.25rem;
   cursor: pointer;
-
-  /* Especifica transiciones separadas para cada propiedad */
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
     transform 0.2s ease;
 }
@@ -213,5 +220,6 @@ a:hover {
 .home-section {
   background-image: url("/fondo-home.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position-y: top;
+  background-position-x: right;
 }

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const navLinks = [
@@ -16,12 +17,12 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full fixed">
-      <div className="container mx-auto flex items-center justify-between py-6 px-6">
+    <header className="w-full fixed backdrop-blur-sm shadow-sm">
+      <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <div>
           <a href="#about" className="transition-colors logo">
-            LRPH
+            <Image height={60} width={35} src={"/logo.svg"} alt="logo" />
           </a>
         </div>
 
