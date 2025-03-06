@@ -14,7 +14,7 @@ export const Technologies = () => {
   return (
     <section className="container pt-10 mx-auto md:my-36 my-10 px-6">
       <h2 className="mb-6 relative">
-        Technologies
+        Main technologies
         <img
           src="technologies.svg"
           aria-hidden="true"
