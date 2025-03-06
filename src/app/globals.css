@@ -5,6 +5,7 @@
 :root {
   --dark_rod: #080808;
   --light_rod: #f7f7f7;
+  --gray-rod: #141414;
 }
 
 body {
@@ -53,9 +54,22 @@ h5 {
 .title-background {
   position: absolute;
   top: -10px;
-  left: -12rem;
   z-index: -1;
   max-width: 90%;
+  color: #141414;
+  font-family: Inter;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 8rem */
+}
+
+.title-background.left {
+  left: -12rem;
+}
+
+.title-background.right {
+  right: -12rem;
 }
 
 p,
@@ -222,4 +236,9 @@ a:hover {
   background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: right;
+}
+
+/* Project Card */
+.project-card {
+  background-color: var(--gray-rod, #141414);
 }

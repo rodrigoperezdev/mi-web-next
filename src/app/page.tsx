@@ -1,6 +1,8 @@
 import { Experience } from "@/components/Experience";
 import Header from "@/components/Header";
 import { HomeIntroduction } from "@/components/HomeIntroduction";
+import { Projects } from "@/components/Projects";
+import { Skills } from "@/components/Skills";
 import { Technologies } from "@/components/Technologies";
 
 export default function Home() {
@@ -15,6 +17,8 @@ export default function Home() {
         <HomeIntroduction />
         <Technologies />
         <Experience />
+        <Skills />
+        <Projects />
       </main>
     </>
   );

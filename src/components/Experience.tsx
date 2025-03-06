@@ -1,8 +1,8 @@
 export const Experience = () => {
   const experience = [
     {
-      name: "cmantica studio",
-      years: "2021 - 2023",
+      name: "GNP Seguros",
+      years: "2024 - current",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
@@ -13,8 +13,8 @@ export const Experience = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
-      name: "GNP Seguros",
-      years: "2024 - current",
+      name: "cmantica studio",
+      years: "2021 - 2023",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
