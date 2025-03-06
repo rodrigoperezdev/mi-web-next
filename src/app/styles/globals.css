@@ -51,6 +51,12 @@ h5 {
   font-weight: 200;
 }
 
+h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 100%;
+}
+
 .title-background {
   position: absolute;
   top: -10px;
@@ -88,6 +94,10 @@ b {
 }
 
 /* Header */
+
+header {
+  z-index: 100;
+}
 
 .logo {
   color: var(--light_rod, #f7f7f7);
@@ -241,4 +251,14 @@ a:hover {
 /* Project Card */
 .project-card {
   background-color: var(--gray-rod, #141414);
+  width: 30.875rem;
+}
+
+.project-card span {
+  color: #fff;
+  text-align: right;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 100%; /* 0.875rem */
 }
