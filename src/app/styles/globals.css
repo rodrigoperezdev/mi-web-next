@@ -13,6 +13,7 @@ body {
   background: var(--dark_rod);
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 h1,
@@ -261,4 +262,22 @@ a:hover {
   font-style: normal;
   font-weight: 200;
   line-height: 100%; /* 0.875rem */
+}
+
+/* Footer */
+footer {
+  border-radius: 2rem 2rem 0rem 0rem;
+  background-color: var(--gray-rod, #141414);
+}
+
+.footer-icons img {
+  border-radius: 20px;
+  padding: 5px;
+  transition: transform 0.3s ease-out;
+  transition: filter 0.2s ease;
+}
+
+.footer-icons img:hover {
+  filter: drop-shadow(0px 0px 5px #f7f7f71a);
+  transform: scale(1.1);
 }
