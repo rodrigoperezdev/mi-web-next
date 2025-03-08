@@ -22,7 +22,7 @@ export default function Header() {
         {/* Logo */}
         <div>
           <a href="#about" className="transition-colors logo">
-            <Image height={60} width={35} src={"/logo.svg"} alt="logo" />
+            <Image height={60} width={35} src={"/icons/logo.svg"} alt="logo" />
           </a>
         </div>
 

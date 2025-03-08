@@ -3,20 +3,24 @@ export const HomeIntroduction = () => {
     <section className="container mx-auto md-my-36 my-10 px-6 ">
       <h1>
         Hi! I'm Rodrigo Pérez
-        <br /> <b>front-end developer</b>
+        <br /> <b>full-stack developer</b>
       </h1>
       <p className="max-w-2xl md:my-10 my-5">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        I am a full-stack developer with over 4 years of experience,
+        specializing in <b>React, Angular, TypeScript, and Node.js.</b> I am
+        passionate about building modern, scalable, and efficient web
+        applications, combining frontend and backend technologies such as{" "}
+        <b>Next.js, Express, and MongoDB.</b> <br />
+        <br />
+        My focus is on performance optimization, accessibility, and user
+        experience. I thrive in team environments, enjoy collaborating with
+        designers, and love turning ideas into functional products. I am always
+        eager to improve my skills and stay updated with the latest web
+        development trends.
       </p>
       <div className="flex max-w-2xl justify-between flex-wrap">
         <div className="flex mb-5">
-          <span className="text-5xl font-bold">3+</span>
+          <span className="text-5xl font-bold">4+</span>
           <p className=" ml-2">
             Years <br />
             of experience
@@ -30,10 +34,10 @@ export const HomeIntroduction = () => {
           </p>
         </div>
         <div className="flex">
-          <span className="text-5xl font-bold">24</span>
+          <span className="text-5xl font-bold">30+</span>
           <p className=" ml-2">
-            Lorem ipsum <br />
-            Dolor sit atem
+            Companies & clients <br />
+            collaborated with
           </p>
         </div>
       </div>

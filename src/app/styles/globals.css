@@ -76,7 +76,7 @@ h6 {
 }
 
 .title-background.right {
-  right: -12rem;
+  right: 0rem;
 }
 
 p,
@@ -86,6 +86,12 @@ figcaption {
 
 b {
   font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .title-background.right {
+    right: 0rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
