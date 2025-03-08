@@ -92,6 +92,15 @@ b {
   h1 {
     font-size: 3rem;
   }
+
+  .title-background {
+    font-size: 4rem;
+    top: 10px;
+  }
+
+  .title-background.right {
+    right: -1rem;
+  }
 }
 
 /* Header */
@@ -110,14 +119,20 @@ header {
   letter-spacing: 0.525rem;
 }
 
-li {
-  color: var(--light_rod);
+.mobile-links {
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
+  color: transparent;
+  transition: 0.5s color ease-in;
+  margin-bottom: 1.75rem;
+}
+
+.mobile-links.open {
+  color: var(--light_rod);
 }
 
 a:hover {
@@ -150,6 +165,23 @@ a:hover {
   .btn {
     padding: 0.34rem 1rem;
   }
+}
+
+.navbar-sm {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: -100%;
+  background-color: var(--dark_rod);
+  color: white;
+  padding-top: 92px;
+  padding-right: 20px;
+  transition: right 0.5s ease;
+}
+
+.navbar-sm.open {
+  right: 0;
 }
 
 .navbar-lg,
@@ -188,27 +220,30 @@ a:hover {
 .burger-wrapper {
   cursor: pointer;
   margin: auto;
-  width: 2rem;
+  width: 3rem;
   height: 2.6rem;
 }
 
 .burger-wrapper .hamburger {
-  background: var(--light_rod);
+  background-color: #fff;
   width: 2rem; /* $s*10 */
-  height: 1px; /* $s */
+  height: 2px; /* $s */
   position: relative;
-  transition: background 10ms 300ms ease;
+  transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
   z-index: 10;
-  transform: translateY(20px); /* $s*4 */
+}
+
+.hamburger.open {
+  background-color: transparent;
 }
 
 .burger-wrapper .hamburger:before,
 .burger-wrapper .hamburger:after {
   transition: top 300ms 350ms ease, transform 300ms 50ms ease;
   position: absolute;
-  background: var(--light_rod);
+  background: #fff;
   width: 2rem; /* $s*10 */
-  height: 1px; /* $s */
+  height: 2px; /* $s */
   content: "";
 }
 
@@ -220,10 +255,14 @@ a:hover {
   top: 10px; /* $s*3 */
 }
 
-.menu-trigger:checked ~ .burger-wrapper .hamburger:before,
-.menu-trigger:checked ~ .burger-wrapper .hamburger:after {
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+.hamburger.open:after {
   top: 0;
+  transform: rotate(45deg);
+}
+
+.hamburger.open::before {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 .hidden {

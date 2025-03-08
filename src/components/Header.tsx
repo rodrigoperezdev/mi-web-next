@@ -53,25 +53,27 @@ export default function Header() {
             onClick={() => setIsMenuOpen((prev) => !prev)}
             className="burger-wrapper block"
           >
-            <div className="hamburger"></div>
+            <div className={isMenuOpen ? "hamburger open" : "hamburger"}></div>
           </button>
-          {isMenuOpen && (
-            <nav className="absolute w-screen h-screen top-0 right-0 bg-black text-white pt-20 pr-5">
-              <ul className="flex flex-col text-right space-y-3 items-end">
-                {navLinks.map((link) => (
-                  <li key={link.href}>
-                    <a
-                      href={link.href}
-                      className="transition-colors"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          )}
+
+          <nav className={isMenuOpen ? "navbar-sm open" : "navbar-sm"}>
+            <ul className="flex flex-col text-right items-end">
+              {navLinks.map((link) => (
+                <li
+                  key={link.href}
+                  className={isMenuOpen ? "mobile-links open" : "mobile-links"}
+                >
+                  <a
+                    href={link.href}
+                    className="transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
