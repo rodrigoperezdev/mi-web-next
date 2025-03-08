@@ -99,6 +99,10 @@ b {
     font-size: 3rem;
   }
 
+  h6 {
+    font-size: 1rem;
+  }
+
   .title-background {
     font-size: 4rem;
     top: 10px;
@@ -298,6 +302,7 @@ a:hover {
 .project-card {
   background-color: var(--gray-rod, #141414);
   width: 30.875rem;
+  margin-top: 2rem;
 }
 
 .project-card span {
@@ -307,6 +312,12 @@ a:hover {
   font-style: normal;
   font-weight: 200;
   line-height: 100%; /* 0.875rem */
+}
+
+@media screen and (max-width: 570px) {
+  .project-card {
+    width: 100%;
+  }
 }
 
 /* Footer */

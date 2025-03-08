@@ -21,7 +21,7 @@ export const Technologies = () => {
           className="title-background"
         />
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[34.2rem]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[34.2rem] max-w-full">
         {technologies.map((tech, index) => (
           <TechCard key={index} imgUrl={tech.imgUrl} title={tech.title} />
         ))}

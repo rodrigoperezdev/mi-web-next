@@ -6,7 +6,7 @@ export const Projects = () => {
   return (
     <div className="container pt-10 mx-auto md:my-36 my-10 px-6">
       <Title title="Personal projects" bgTitle="Projects" direction="right" />
-      <div className="flex justify-between mt-36">
+      <div className="flex justify-around mt-20 sm:mt-36 flex-wrap">
         <ProjectCard
           imgSrc="images/emprise.png"
           title="Emprise"
