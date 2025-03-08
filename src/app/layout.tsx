@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" dir="ltr">
       <body className={inter.className}>
         <Header />
-        <main className="home-section pt-48">{children}</main>
+        <main className="home-section pt-28 lg:pt-48">{children}</main>
         <Footer />
       </body>
     </html>

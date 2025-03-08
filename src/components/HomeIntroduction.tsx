@@ -1,6 +1,6 @@
 export const HomeIntroduction = () => {
   return (
-    <section className="container mx-auto md-my-36 my-10 px-6 ">
+    <section className="container mx-auto md-my-36 my-10 px-6 py-6 lg:py-0 lg:backdrop-blur-0 backdrop-blur-md backdrop-brightness-75 lg:backdrop-brightness-100 rounded-[4rem]">
       <h1>
         Hi! I'm Rodrigo Pérez
         <br /> <b>full-stack developer</b>

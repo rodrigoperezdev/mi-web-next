@@ -21,7 +21,7 @@ export const Experience = () => {
   ];
 
   return (
-    <section className="flex justify-between backdrop-blur-sm pt-36 mt-[-3rem] rounded-3xl pr-20 2xl:pr-36">
+    <section className="flex justify-between backdrop-blur-sm pt-36 mt-[-7rem] rounded-3xl pr-20 2xl:pr-36">
       <div>
         <img src="/moon.png" alt="Moon" />
       </div>

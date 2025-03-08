@@ -298,6 +298,12 @@ a:hover {
   background-position-x: right;
 }
 
+@media screen and (max-width: 708px) {
+  .home-section {
+    background-position-x: 86px;
+  }
+}
+
 /* Project Card */
 .project-card {
   background-color: var(--gray-rod, #141414);
