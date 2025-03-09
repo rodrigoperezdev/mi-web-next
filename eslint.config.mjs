@@ -3,6 +3,7 @@ import tseslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import eslintPluginReact from "eslint-plugin-react";
 import configPrettier from "eslint-config-prettier";
+import next from "eslint-config-next";
 
 export default [
   js.configs.recommended,
@@ -13,6 +14,10 @@ export default [
       parser: tsParser,
       sourceType: "module",
       ecmaVersion: "latest",
+      env: {
+        browser: true,
+        node: true,
+      },
     },
     plugins: { "@typescript-eslint": tseslint, react: eslintPluginReact },
     rules: {
@@ -24,5 +29,6 @@ export default [
       semi: ["error", "always"],
       quotes: ["error", "double"],
     },
+    ignorePatterns: ["jest.config.js"],
   },
 ];
