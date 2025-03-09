@@ -17,10 +17,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Use Node.js 23
+      - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
-          node-version: 23.6.1
+          node-version: 20.x
           cache: "yarn"
 
       - name: Install Dependencies

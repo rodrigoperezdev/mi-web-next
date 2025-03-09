@@ -7,8 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test": "jest"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "test": "jest",
+    "format": "prettier --check ."
   },
   "dependencies": {
     "@next/font": "^14.2.15",
@@ -36,5 +37,8 @@
     "tailwindcss": "^3.4.1",
     "ts-jest": "^29.2.5",
     "typescript": "^5.8.2"
+  },
+  "resolutions": {
+    "@rushstack/eslint-patch": "0.0.0"
   }
 }
