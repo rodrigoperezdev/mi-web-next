@@ -8,6 +8,10 @@
   --gray-rod: #141414;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--light_rod);
   background: var(--dark_rod);
@@ -72,7 +76,7 @@ h6 {
 }
 
 .title-background.left {
-  left: -12rem;
+  left: 0;
 }
 
 .title-background.right {
@@ -97,6 +101,14 @@ b {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
   }
 
   h6 {
@@ -302,6 +314,10 @@ a:hover {
   .home-section {
     background-position-x: 86px;
   }
+}
+
+.experience-title {
+  font-weight: 200;
 }
 
 /* Project Card */

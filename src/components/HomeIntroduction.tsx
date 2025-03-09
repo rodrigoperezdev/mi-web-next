@@ -1,6 +1,9 @@
 export const HomeIntroduction = () => {
   return (
-    <section className="container mx-auto md-my-36 my-10 px-6 py-6 lg:py-0 lg:backdrop-blur-0 backdrop-blur-md backdrop-brightness-75 lg:backdrop-brightness-100 rounded-[4rem]">
+    <section
+      className="mx-auto md-my-36 my-10 py-6 lg:py-0 lg:backdrop-blur-0 backdrop-blur-md backdrop-brightness-75 lg:backdrop-brightness-100 rounded-[4rem] px-5 lg:px-10 xl:px-20 max-w-[1920px]"
+      id="about"
+    >
       <h1>
         Hi! I'm Rodrigo Pérez
         <br /> <b>full-stack developer</b>

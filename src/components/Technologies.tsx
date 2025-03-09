@@ -12,7 +12,10 @@ const technologies = [
 
 export const Technologies = () => {
   return (
-    <section className="container pt-10 mx-auto md:my-36 my-10 px-6">
+    <section
+      className="pt-10 mx-auto md:my-36 my-10 z-10 relative px-5 lg:px-10 xl:px-20 max-w-[1920px]"
+      id="technologies"
+    >
       <h2 className="mb-6 relative">
         Main technologies
         <img
@@ -21,7 +24,7 @@ export const Technologies = () => {
           className="title-background"
         />
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[34.2rem] max-w-full">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[34.2rem] max-w-full">
         {technologies.map((tech, index) => (
           <TechCard key={index} imgUrl={tech.imgUrl} title={tech.title} />
         ))}
