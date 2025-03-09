@@ -20,6 +20,7 @@ export default [
       "react/react-in-jsx-scope": "off",
       "@typescript-eslint/no-unused-vars": ["error"],
       "@typescript-eslint/no-explicit-any": "warn",
+      "no-undef": "off",
       semi: ["error", "always"],
       quotes: ["error", "double"],
     },
