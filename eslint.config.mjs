@@ -1,14 +1,25 @@
-import eslintPluginPrettier from "eslint-plugin-prettier";
-import configPrettier from "eslint-config-prettier";
 import js from "@eslint/js";
+import tseslint from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
+import eslintPluginReact from "eslint-plugin-react";
+import configPrettier from "eslint-config-prettier";
 
 export default [
   js.configs.recommended,
   configPrettier,
   {
-    plugins: { prettier: eslintPluginPrettier },
+    files: ["**/*.ts", "**/*.tsx"],
+    languageOptions: {
+      parser: tsParser,
+      sourceType: "module",
+      ecmaVersion: "latest",
+    },
+    plugins: { "@typescript-eslint": tseslint, react: eslintPluginReact },
     rules: {
-      "prettier/prettier": "error",
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "@typescript-eslint/no-unused-vars": ["error"],
+      "@typescript-eslint/no-explicit-any": "warn",
       semi: ["error", "always"],
       quotes: ["error", "double"],
     },
