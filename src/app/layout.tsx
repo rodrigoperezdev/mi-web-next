@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 /* Metadata for the entire application, improves SEO and provides descriptive information.  */
 
 export const metadata: Metadata = {
-  title: "Rodrigo Pérez | Front end developer",
+  title: "Rodrigo Pérez | Full stack developer",
   description:
-    "Hi! My name is Rodrigo Pérez, I am a front end developer with more than 3 years of experience.",
+    "Hi! My name is Rodrigo Pérez Hernández, I am a Full Stack end developer with more than 4 years of experience.",
 };
 
 export default function RootLayout({
