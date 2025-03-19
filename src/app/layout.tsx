@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   title: "Rodrigo Pérez | Full stack developer",
   description:
     "Hi! My name is Rodrigo Pérez Hernández, I am a Full Stack end developer with more than 4 years of experience.",
+  icons: {
+    icon: "/favicon.svg",
 };
 
 export default function RootLayout({
