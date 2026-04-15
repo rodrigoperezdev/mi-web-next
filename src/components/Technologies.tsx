@@ -2,11 +2,11 @@ import React from "react";
 import { TechCard } from "./TechCard";
 
 const technologies = [
-  { imgUrl: "/html5.png", title: "HTML 5" },
-  { imgUrl: "/css3.png", title: "CSS & SCSS" },
-  { imgUrl: "/javascript.png", title: "JavaScript" },
   { imgUrl: "/react.png", title: "React" },
   { imgUrl: "/typescript.png", title: "TypeScript" },
+  { imgUrl: "/javascript.png", title: "JavaScript" },
+  { imgUrl: "/css3.png", title: "CSS & SCSS" },
+  { imgUrl: "/html5.png", title: "HTML 5" },
   { imgUrl: "/angular.png", title: "Angular" },
 ];
 

@@ -10,51 +10,56 @@ export const Experience = () => {
       <div>
         <h2 className="text-right experience-title">
           My experience
-          <b> in 3 companies</b> so far
+          <b> building scalable products</b>
         </h2>
+
+        {/* SCIGON */}
+        <div className="my-4 flex flex-col items-end">
+          <div className="flex justify-end items-end md:items-baseline flex-col md:flex-row ">
+            <h3 className="mr-0 md:mr-4">Scigon Consulting</h3>
+            <div className="font-extralight text-2xl">2025 - current</div>
+          </div>
+          <p className="text-gray-500 max-w-[35rem] text-right">
+            Leading front-end architecture and development using <b>Next.js, React, and TypeScript</b>, building scalable and high-performance applications. Defined front-end structure, patterns, and best practices, contributing to technical decisions and improving long-term maintainability.
+            <br />
+            <br />
+            Mentoring junior developers, conducting code reviews, and collaborating with product and design teams to deliver reliable, accessible, and user-focused features.
+          </p>
+        </div>
+
+        {/* GNP */}
         <div className="my-4 flex flex-col items-end">
           <div className="flex justify-end items-end md:items-baseline flex-col md:flex-row ">
             <h3 className="mr-0 md:mr-4">GNP Seguros</h3>
-            <div className="font-extralight text-2xl">2024 - current</div>
+            <div className="font-extralight text-2xl">2024 - 2025</div>
           </div>
           <p className="text-gray-500 max-w-[35rem] text-right">
-            Working via GTEC Software developing micro frontends in Angular and
-            full-stack applications with{" "}
-            <b>React, TypeScript, Node.js, Express, and MongoDB</b> for other
-            GTEC clients. Implementing unit and integration tests using{" "}
-            <b>Jest, Jasmine, and Karma.</b> Collaborating on UX/UI designs in{" "}
-            <b>Figma.</b>
+            Developed micro frontend applications in a large-scale enterprise environment using Angular, while building features with <b>React, TypeScript, and Next.js</b>. Contributed to defining requirements, planning modules, and aligning technical solutions with business needs.
             <br />
             <br />
-            Drafting functional requirements documentation, considering business
-            scope and ensuring integration with other system areas for seamless
-            interoperability.
+            Ensured application quality through testing strategies and collaboration with cross-functional teams, improving system reliability and overall user experience.
           </p>
         </div>
+
+        {/* AdsProject */}
         <div className="my-4 flex flex-col items-end">
           <div className="flex justify-end items-end md:items-baseline flex-col md:flex-row ">
             <h3 className="mr-0 md:mr-4">AdsProject Media</h3>
             <div className="font-extralight text-2xl">2023 - 2024</div>
           </div>
           <p className="text-gray-500 max-w-[35rem] text-right">
-            Built responsive web applications with{" "}
-            <b>React.js, SASS, and HTML5</b>, ensuring cross-browser
-            compatibility and SEO optimized websites with <b>Next.js</b>.
-            Improved performance with lazy loading, code splitting, and asset
-            optimization. Worked closely with UX/UI teams to enhance
-            accessibility.
+            Built responsive web applications using <b>React.js, SASS, and Next.js</b>, improving performance through lazy loading, code splitting, and asset optimization. Delivered SEO-friendly and accessible interfaces in collaboration with UX/UI teams.
           </p>
         </div>
+
+        {/* Cmantica */}
         <div className="my-4 flex flex-col items-end">
           <div className="flex justify-end items-end md:items-baseline flex-col md:flex-row ">
             <h3 className="mr-0 md:mr-4">cmantica studio</h3>
             <div className="font-extralight text-2xl">2021 - 2022</div>
           </div>
           <p className="text-gray-500 max-w-[35rem] text-right">
-            Developed SEO-optimized websites using <b>HTML5, CSS, JavaScript</b>
-            . Web applications using <b>React.js</b>. Integrated <b>Firebase</b>{" "}
-            for authentication and database management. Designed UX/UI in{" "}
-            <b>Figma</b>, ensuring a seamless user experience.
+            Developed SEO-optimized websites using <b>HTML5, CSS, and JavaScript</b>, and built web applications with <b>React.js</b>. Integrated Firebase for authentication and database management, and designed UX/UI in Figma to deliver smooth user experiences.
           </p>
         </div>
       </div>

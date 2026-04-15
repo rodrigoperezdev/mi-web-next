@@ -6,24 +6,23 @@ export const HomeIntroduction = () => {
     >
       <h1>
         Hi! I'm Rodrigo Pérez
-        <br /> <b>full-stack developer</b>
+        <br /> <b>Front-End Engineer</b>
       </h1>
       <p className="max-w-2xl md:my-10 my-5">
-        I am a full-stack developer with over 4 years of experience,
-        specializing in <b>React, Angular, TypeScript, and Node.js.</b> I am
-        passionate about building modern, scalable, and efficient web
-        applications, combining frontend and backend technologies such as{" "}
-        <b>Next.js, Express, and MongoDB.</b> <br />
-        <br />
-        My focus is on performance optimization, accessibility, and user
-        experience. I thrive in team environments, enjoy collaborating with
-        designers, and love turning ideas into functional products. I am always
-        eager to improve my skills and stay updated with the latest web
-        development trends.
+        I’m a Front-End Engineer with over 5 years of experience building
+        scalable, high-performance web applications using{" "}
+        <b>React, Next.js, and TypeScript.</b> I specialize in creating
+        maintainable, performance-driven solutions with a strong focus on clean
+        architecture and user experience. <br />
+        <br />I have experience defining front-end architecture, implementing
+        best practices, and contributing to technical decisions that improve
+        product quality and development workflows. I work closely with product
+        and design teams to deliver reliable, accessible, and high-quality
+        applications.
       </p>
       <div className="flex max-w-2xl justify-between flex-wrap">
         <div className="flex mb-5">
-          <span className="text-5xl font-bold">4+</span>
+          <span className="text-5xl font-bold">5+</span>
           <p className=" ml-2">
             Years <br />
             of experience
@@ -33,7 +32,7 @@ export const HomeIntroduction = () => {
           <span className="text-5xl font-bold">2</span>
           <p className=" ml-2">
             Languages
-            <br /> Spanish and English (B2)
+            <br /> Spanish and English (Professional)
           </p>
         </div>
         <div className="flex">
